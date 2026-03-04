@@ -12,23 +12,19 @@ Reusable [SKILL.md](https://docs.anthropic.com/en/docs/claude-code/skills) workf
 
 ## Usage
 
-### Claude Code
-
-Install a skill directly:
+Clone the repo and copy the skill you need into your Claude Code skills directory:
 
 ```bash
-claude skill add --from https://github.com/aldunchev/ai-fe-skills/tree/main/drupal-figma-to-canvas-sdc
+# Personal (all projects)
+git clone https://github.com/aldunchev/ai-fe-skills.git ~/.claude/skills/ai-fe-skills
+
+# Project-level (current project only)
+git clone https://github.com/aldunchev/ai-fe-skills.git .claude/skills/ai-fe-skills
 ```
 
-Or clone and reference locally:
+Skills are discovered automatically — once copied, they appear when you type `/` in Claude Code.
 
-```bash
-git clone https://github.com/aldunchev/ai-fe-skills.git
-```
-
-### Other Agents
-
-Each skill folder contains a `SKILL.md` with YAML frontmatter following the cross-compatible Agent Skills format. Copy the skill folder into your project or reference it per your agent's documentation.
+For other agents (Codex, Cursor, Windsurf, etc.), each skill folder contains a `SKILL.md` with YAML frontmatter following the cross-compatible Agent Skills format. Copy the skill folder into your project or reference it per your agent's documentation.
 
 ## Structure
 
